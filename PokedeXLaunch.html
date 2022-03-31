@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PokedexLaunchXY</title>
+    
+    <link rel="stylesheet" href="pkedexLaunchX.css">
+
+</head>
+-->
+<body>
+    <div class="pokedex">
+      <div class="left-container">
+        <div class="left-containertop">
+          <div class="topcircleblue"></div>
+          <div class="topbuttons-rav">
+            <div class="circlered"></div>
+            <div class="circleyellow"></div>
+            <div class="circlegreen"></div>
+          </div>
+        </div>
+        <div class="left-containermain">
+          <div class="left-container_main">
+            <div class="left-screenwhite">
+              <div class="left-screenblack">
+                <div class="main-screen-error hide">
+                   <img src="" class="poke-error-image" alt="error">
+                   <p class="perror">El nombre del pokemon no se encuentra registrado</p>
+                </div>
+                <div class="main-screen hide">
+                  <div class="screenheader">
+                    <span class="pokename" id="name"></span>     
+                  </div>
+                  <div class="screenimage">                
+                    <img src="" class="poke-front-image" alt="front">
+                                        
+                    <img src="" class="poke-back-image" alt="back">
+                  </div>
+                  <div class="description">
+                    <div class="types">
+                      <p>Tipo:</p>
+                      <span class="poke-type-one"></span>
+                      <span class="poke-type-two"></span>
+                    </div>
+                   
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="leftcontrollers">
+              <div class="controllersbuttons"> 
+                <div class="buttonscircle"></div><br>               
+              </div>            
+              <div class="controllers">
+                <div class="cell top"></div>
+                <div class="cell left"></div>
+                <div class="cell middle"></div>
+                <div class="cell right"></div>
+                <div class="cell bottom"></div>
+              </div>
+              <div class="button_yellow"></div>
+            </div>
+          </div>
+          <div class="left-right">
+            <div class="left-righthinge"></div>
+            <div class="left-righthinge"></div>
+          </div>
+        </div>
+      </div><br>
+      <div class="right-container">
+        <div class="right-container__black">
+            <input class="inputform" type="text" placeholder="ingresa nombre de pokemon" id="pokeName" name="pokename"> <br>
+          
+        </div>
+        <div class="right-container__buttons">
+          <div class="right-button"  onclick="btnpokemon()" >Buscar</div>
+        </div>
+        <div class="rightcontrollers">
+            <div class="controllersbuttonsright"> 
+              <div class="rightbuttonscircle1"></div><br>  
+              <div class="rightbuttonscircle2"></div><br>                
+            </div>     
+            <div class="rightbutton1"></div><br>
+            <div>&nbsp;&nbsp;&nbsp;</div>
+            <div class="rightbutton2"></div> 
+            
+        </div> <br>
+        <div class="rightcontrollers">
+                 
+            <div class="controllersbuttonsright">
+                <div class="rightbutton3"></div>            
+                <div class="rightbutton4"></div> 
+            </div>
+            <div class="controllersbuttonsright">  
+                <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>      
+                <div class="rightbuttonscircle3"></div><br>                
+            </div>
+        </div><br>
+        <div class="descriptionrigth">
+            <div class="screen__stats">
+                <p class="stats__weight">
+                  Ancho: <span class="poke-weight"></span>
+                </p>
+            </div>
+            <div class="screen__stats">
+                <p class="stats__height">
+                  Altura: <span class="poke-height"></span>
+                </p>
+            </div>
+        </div>
+      </div>
+    </div>
+    <script src="PokedexLaunchX.js"></script>
+  </body>
+</html>

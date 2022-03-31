@@ -1,0 +1,447 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  /*::::::::::estilo  del body*/
+  body {
+  
+    display: flex;
+    justify-content: center;
+    background-position: center;
+    background-image: url("F1.gif");
+    background-size: cover;
+    background-repeat:no-repeat;
+    background-position: center center;
+    font-family: Helvetica Black;
+  }
+
+  
+  .pokedex {
+    font-family: Helvetica Black;;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 600px;
+    margin: 17.1rem;
+    width: 750px;
+  }
+  /*estilo de el lado izquierdo del pokedex*/
+  .left-container,
+  .left-container {
+    background: #d13434;
+    height: 100%;
+    width: calc(70% + 60px);
+    border: 5px solid rgb(148, 8, 8);
+    border-radius: 30px;
+    
+  }
+  /*estilo de la parte de arriba de el lado izquierdo del pokedex*/
+  .left-containertop{
+    border-bottom: 3px solid black;
+    display: flex;
+    height: 65px;
+    padding: 8px;
+    border-radius: 10px;
+  }
+  
+  /*estilo de el botón azul*/
+  .topcircleblue {
+    background: radial-gradient(farthest-corner at 25px 25px, white, #47b6f1, #47a8dd);
+    border-radius: 60%;
+    border: 6px solid white;
+    box-shadow: 0 0 2px 2px rgba(0,0,0,.5);
+    height: 45px;
+    width: 40px;
+  }
+  /*estilo de el div donde tiene el circulo rojo amarillo y verde*/
+  .topbuttons-rav {
+    display: flex;
+    margin: 0 25px;
+  }
+  
+  /*estilo de cada circulo de color rojo amarillo verde*/
+  .circlered,
+  .circleyellow,
+  .circlegreen {
+    border-radius: 50%;
+    border: 1px solid black;
+    height: 25px;
+    margin-right: 5px;
+    width: 20px;
+  }
+  .circlered,
+  .circleyellow,
+  .circlegreen {
+    border-radius: 50%;
+    border: 1px solid black;
+    height: 25px;
+    margin-right: 5px;
+    width: 28px;
+  }
+  .circlered {
+    background: #7F100F;
+  }
+  .circleyellow {
+    background: #EDF18E;
+  }
+  .circlegreen {
+    background: #e7e55a;
+  }
+  
+  /* estilo izquierda que contine patalla donde se verá el pokemon */
+  .left-containermain {
+    display: flex;
+    height: calc(100% - 60px);
+  }
+  .left-container_main {
+    height: 100%;
+    padding: 10px;
+    width: 400px;
+  }
+  
+  /* estilo de pantalla izquierda*/
+  .left-screenwhite {
+    background: #000000;
+    border: 8px solid rgb(116, 116, 116);
+    box-shadow: inset 0 0 2px 2px rgba(0,0,0,.3);
+    height: 320px;
+  }
+  /* estilo de pantalla */
+  .left-screenblack {
+    background-image: url("F3.jpg");
+    background-size: cover;
+    background-repeat:no-repeat;
+    background-position: center center;
+    align-content: center;
+    height: calc(78% - 10px);
+    margin: 7px;
+    padding: 5px;
+    width: calc(100% - 10px);
+  }
+  .main-screen {
+    border-radius: 35px;
+    height: 100%;
+    padding: 15px;
+  }
+  .main-screen-error {
+    background: rgba(13, 9, 53, 0.918);
+    border-radius: 20px;
+    font-size: 20px;
+    align-items: center;
+    align-content: center;
+    border-radius: 30px;
+    height: 100%;
+    padding: 25px;
+    font-family: Helvetica;
+  }
+  .perror{
+    color: rgb(248, 252, 9);
+  }
+  
+  /* estilo del header para el nombre*/
+  .screenheader {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    justify-content: center;
+    background: rgba(5, 8, 8, 0.705);
+    border-radius: 12px;
+  }
+  /* estilo nombre de pokemon*/
+  .pokename {
+    color: rgb(255, 255, 255);
+    font-size: 25px;
+    font-family: Helvetica;
+    
+  }
+  
+  .pokeid {
+    color: rgba(0, 0, 0, 0.815);
+    font-size: 10px;
+    
+  }
+  /* estilo de uimagen de pokemon*/
+  .screenimage {
+    display: flex;
+    justify-content: space-around;
+    background: rgba(34, 32, 32, 0.747);
+    border-radius: 10px;  
+  }
+  /* estilo para la parte de enfrente y atrás del pokemon*/
+  .poke-error-image,
+  .poke-front-image,
+  .poke-back-image {
+    height: 165px;
+    width: 165px;
+  }
+  /*estilo para descripcion de pokemon*/ 
+  .description {
+    display: flex;
+    height: 100px;
+    justify-content: space-around;
+  }
+  .types {
+    height: 65%;
+    padding: 10px;
+    background: rgb(169, 168, 184);
+    border-radius: 10px;
+  }
+  .poke-type-one,
+  .poke-type-two {
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 25px;
+    display: block;
+    margin-bottom: 05px;
+    padding: 5px;
+    text-align: center;
+  }
+ 
+  /* estilo de botones de abajo de la parte izquierda*/
+  .leftcontrollers {
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+    margin: 40px 10px 20px;
+  }
+  /*estilo Botones de la parte izquierda inferior*/
+  .controllersbuttons {
+    display: flex;
+    justify-content: space-around;
+    width: 100px;
+  }
+  /* esilo de boton azul de la parte inferior izquierda*/
+  .buttonscircle {
+    background-color: rgb(4, 4, 110);
+    border-radius: 50%;
+    box-shadow: 0 0 10px 5px rgba(0,0,0,.5);
+    height: 80px;
+    width: 80px;
+  }
+  /*estilo de div para botones en cruz de la parte inferior izquierda*/
+  .controllers {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    
+  }
+  /*estilo de cada cuadro de los botones en cruz*/
+  .cell {
+    background: black;
+    box-shadow: 0 0 2px 2px rgba(0,0,0, .3);
+    height: 35px;
+    width: 35px;
+  }
+  .cell.top {
+    border-left: 1px solid dimgrey;
+    border-radius: 5px 5px 0 0;
+    border-right: 1px solid dimgrey;
+    border-top: 1px solid dimgrey;
+    grid-column: 2 / span 1;
+    grid-row: 1 / span 1;
+  }
+  .cell.left {
+    border-bottom: 1px solid dimgrey;
+    border-left: 1px solid dimgrey;
+    border-radius: 5px 0 0 5px;
+    border-top: 1px solid dimgrey;
+    grid-column: 1 / span 1;
+    grid-row: 2 / span 1;
+  }
+  .cell.middle {
+    grid-column: 2 / span 1;
+    grid-row: 2 / span 1;
+  }
+  .cell.right {
+    border-bottom: 1px solid dimgrey;
+    border-radius: 0 5px 5px 0;
+    border-right: 1px solid dimgrey;
+    border-top: 1px solid dimgrey;
+    grid-column: 3 / span 1;
+    grid-row: 2 / span 1;
+  }
+  .cell.bottom {
+    border-bottom: 1px solid dimgrey;
+    border-left: 1px solid dimgrey;
+    border-radius: 0 0 5px 5px;
+    border-right: 1px solid dimgrey;
+    grid-column: 2 / span 1;
+    grid-row: 3 / span 1;
+  }
+  /*estilo de boton amarillo de la parte inferior izquierda*/
+  .button_yellow{
+    align-items: center;
+    background: rgb(243, 239, 9);
+    border: 1px solid dimgrey;
+    box-shadow: 0 0 2px 2px rgba(0,0,0, .3);
+    color: rgba(255,255,255,.75);
+    display: flex;
+    height: 45px;
+    justify-content: center;
+    width: 105px;
+  }
+ 
+  .left-right {
+    border-left: 3px solid black;
+    display: flex;
+    flex-direction: column;
+    height: 97%;
+    justify-content: space-between;
+    width: 45px;
+  }
+  .left-righthinge {
+    background: linear-gradient(to right, #7F100F, #E71D23, #E71D23, #7F100F);
+    height: 65px;
+    width: 100%;
+  }
+ 
+  .right-container {
+    background: #E71D23;
+    height: calc(97% - 75px);
+    padding: 15px;
+    width: calc(60% - 60px);
+    border-radius: 30px;
+  }
+  .right-container {
+    border: 5px solid rgb(95, 7, 7);
+    width: 100%;
+  }
+  .right-container {
+    border-left: none;
+  }
+  .right-container__black {
+    background: rgb(28, 58, 15);
+    box-shadow: 0 0 2px 2px rgba(0,0,0,.3);
+    height: 150px;
+    padding: 10px;
+    border-radius: 15px;
+    
+  }
+
+  .inputform {
+    background: rgb(0, 0, 0);
+    border: 1px solid #b4f125;
+    border-radius: 5px 5px 5px 5px;
+    color: #f0f0f0;
+    font-size: 20px;
+    padding: 30px;
+    width: 100%;
+    height: 50px;
+ }
+ 
+  .right-container__buttons {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 25px;
+  }
+  .left-button,
+  .right-button {
+    align-items: center;
+    background: #d7dbdd;
+    border-radius: 3px;
+    border: 2px solid black;
+    box-shadow: 0 0 2px 2px rgba(0,0,0,.3);
+    cursor: pointer;
+    display: flex;
+    font-weight: bold;
+    height: 40px;
+    justify-content: center;
+    text-transform: uppercase;
+    width: 100%;
+  }
+  
+  .left-button:hover,
+  .right-button:hover {
+    background: rgb(255, 239, 8);
+  }
+  
+  .left-button:active,
+  .right-button:active {
+    box-shadow: inset 0 0 2px 2px rgba(158, 158, 158, 0.849);
+  }
+  
+  /* estilo de botones de abajo de la parte derecha*/
+  .rightcontrollers {
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+    margin: 25px 25px 0;
+  }
+  /*estilo Botones de la parte derecha inferior*/
+  .controllersbuttonsright {
+    display: flex;
+    justify-content: space-around;
+    width: 100px;
+  }
+  /* esilo de boton azul de la parte inferior derecha*/
+  .rightbuttonscircle1,
+  .rightbuttonscircle2 {
+    border-radius: 70%;
+    box-shadow: 0 0 2px 2px rgba(0,0,0,.5);
+    height: 25px;
+    width: 25px;
+  }
+  .rightbuttonscircle1{
+    background-color: rgb(49, 151, 117);
+  }
+  .rightbuttonscircle2{
+    background-color: rgb(28, 58, 155);
+  }
+  /* estilos de los botones negros de el lado derecho*/
+  .rightbutton1,
+  .rightbutton2{
+    align-items: center;
+    background: rgb(5, 5, 5);
+    border-radius: 5px 5px 5px 5px;
+    box-shadow: 0 0 2px 2px rgb(0, 0, 0);
+    color: rgba(255,255,255,.75);
+    display: flex;
+    height: 10px;
+    justify-content: center;
+    width: 70px;
+  }
+/*estilo de los botones grises de el lado derecho*/
+  .rightbutton3,
+  .rightbutton4{
+    align-items: center;
+    background: rgb(243, 228, 228); 
+    box-shadow: 0 0 3px 3px rgba(131, 123, 123, 0.829);
+    color: rgba(255,255,255,.75);
+    display: flex;
+    height: 50px;
+    width: 100px;
+    justify-content: center;
+  }
+  /*estilo de boton naranja de el lado derecho*/
+  .rightbuttonscircle3 {
+    background-color: rgb(189, 131, 45);
+    border-radius: 50%;
+    box-shadow: 0 0 3px 3px rgba(0,0,0,.5);
+    height: 35px;
+    width: 35px;
+  }
+  /*Estilo para la descripcion de el lado derecho inferior*/
+  .descriptionrigth {
+    display: flex;
+    height: 50px;
+    justify-content: space-around;
+    align-content: center;
+  }
+   /*estilo de la parte de altura y anchpo parte inferior derecha*/
+  .screen__stats {
+    background: rgba(0,0,0,.6);
+    font-family: Helvetica;
+    border-radius: 5px;
+    color: rgb(18, 253, 88);
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-between;
+    padding: 20px 20px;
+  }
+  
+.hide {
+    display: none;
+}  
+  
+  
